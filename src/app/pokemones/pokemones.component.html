@@ -1,0 +1,21 @@
+<section id="pokemones">
+  <div class="pokemon-grid">
+    <div class="box" *ngFor="let pokemon of pokemones">
+      <h3>{{pokemon.name}}</h3>
+      <img [src]="pokemon.sprites.front_default" alt="pokemon">
+      <p>
+        <b>Id: </b> {{pokemon.id}}
+        <br>
+        <b>Type </b> {{pokemon.types[0].type.name}}
+        <br>
+        <b>Hp: </b> {{pokemon.stats[0].base_stat}}
+        <br>
+        <b>Attack: </b> {{pokemon.stats[1].base_stat}}
+        <br>
+        <b>Defense: </b> {{pokemon.stats[2].base_stat}}
+        <br>
+        <b>Speed: </b> {{pokemon.stats[5].base_stat}}
+      </p>
+    </div>
+  </div>
+</section>
