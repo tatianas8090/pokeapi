@@ -1,3 +1,11 @@
+*
+  margin:0
+  padding:0
+  box-sizing: border-box
+
+.header
+  display: flex
+  justify-content: space-between
 
 .logo_pokemon
   padding: 15px
@@ -8,10 +16,9 @@
   justify-content: center
 
 .titulo_header
-  display: flex
-  align-items: column
-  justify-content: center
-  font-size:35px
+  font-size:25px
+  text-align: center
+
 
 .button_header1
   text-decoration:none
@@ -31,20 +38,70 @@
   justify-content: center
   padding:30px
 
-
-
 .logo_tatiana
   display: flex
   align-items: column
   justify-content: center
+  margin-bottom: .5rem
 
 .texto_logo
   display: flex
   align-items: column
   justify-content: center
+  margin-bottom: 3rem
 
-/* pokedex */
 
-.header
-  text-transform:uppercase
-  letter: spacing 3px
+
+.button-menu
+  z-index: 200
+  width: 80px
+  height: 60px
+  border: none
+  background:#f01212
+  cursor: pointer
+
+.button-menu span
+  width: 37px
+  height: 4px
+  margin-bottom: 5px
+  position: relative
+  background: #444444
+  border-radius: 3px
+  transform-origin: 4px 0px
+  transition: all 0.2s linear
+
+
+
+.button-menu.close span
+  opacity: 1
+  transform: rotate(45deg) translate(0px, 0px)
+  background: #ffffff
+
+
+.button-menu.close span:nth-child(2)
+  transform: rotate(-45deg) translate(-8px, 5px)
+
+
+.button-menu.close span:nth-child(3)
+  display: none
+
+.nav.show
+  display: none
+  list-style: none
+  style-list: none
+  color:#0b0a0a
+
+
+.ul
+  list-style: none
+  style-list: none
+  color:#0b0a0a
+
+@media screen and (max-width:428px)
+  .header
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+

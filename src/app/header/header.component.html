@@ -1,34 +1,50 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+/>
+<script src="header/script.js"></script>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
-<!--PPAL-->
 <section class="header">
+  <div class="logo_pokemon">
+    <img
+      src="../../assets/img/logo_pokemon.png"
+      alt="logo_pokemon"
+      width="235"
+      height="113"
+    />
+  </div>
 
-<div class="logo_pokemon">
-  <img src="../../assets/img/logo_pokemon.png"alt="logo_pokemon" width="235" height="113">
-</div>
+  <!--MENU HAMBURGUESA-->
+  <div class="ppal">
+  <button id="button-menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="nav">
+    <ul class="ul">
+      <li class="li"><a href="#" class="header_a">Inicio</a></li>
+      <li class="li"><a href="team" class="header_a">Equipo</a></li>
+      <li class="li"><a href="#" class="header_a">Busca tu Pokemon</a></li>
+      <li class="li"><a href="Pokemones" class="header_a">Pokedex</a></li>
+      <li class="li"><a href="#" class="fa-brands fa-facebook-f"></a></li>
+      <li class="li"><a href="#" class="fa-brands fa-twitter"></a></li>
+      <li class="li"><a href="#" class="fa-brands fa-instagram"></a></li>
+    </ul>
+  </div>
+  </div>
+</section>
 
-<div
-  class="menu">
-  <i class="fa-solid fa-bars"></i>
-</div>
-
-<div class="header_ul">
-  <ul class ="header_ul">
-    <li class ="header__li"><a href="#" class="header_a">Inicio</a></li>
-    <li class ="header__li"><a href="#" class="header_a">Pokedex</a></li>
-    <li class ="header__li"><a href="#" class="header_a">Equipo</a></li>
-    <li class ="header__li"><a href="#" class="fa-brands fa-facebook-f"></a></li>
-    <li class ="header__li"><a href="#" class="fa-brands fa-twitter"></a></li>
-    <li class ="header__li"><a href="#" class="fa-brands fa-instagram"></a></li>
-  </ul>
-</div>
-
+  <!--FIN MENU HAMBURGUESA-->
+<section class="vamosatrapar">
   <div class="titulo_header">
-    <h1> ¡Vamos a atraparlos a todos!</h1>
+    <h1>¡Vamos a atraparlos a todos!</h1>
   </div>
   <div class="pika_img">
-    <img src="../../assets/img/pika.png"alt="pikachu" width="345" height="317">
+    <img
+      src="../../assets/img/pika.png"
+      alt="pikachu"
+      width="345"
+      height="317"
+    />
   </div>
 
   <div class="button_header">
@@ -36,9 +52,16 @@
   </div>
 
   <div class="logo_tatiana">
-    <img src="../../assets/img/zorro.png"alt="logo_tatiana" width="96" height="96">
+    <img
+      src="../../assets/img/zorro.png"
+      alt="logo_tatiana"
+      width="96"
+      height="96"
+    />
   </div>
   <div class="texto_logo">
     <p>T&S</p>
   </div>
 </section>
+<app-pokedex></app-pokedex>
+

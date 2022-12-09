@@ -1,10 +1,10 @@
+<div class="card">
 <p>Nombre</p>
 <input type="text" [(ngModel)]="name">
-<button (click)="search()">Buscar</button>
-<div class="image">
-<img src="{{urLImg}}" alt="foto pokemon">
+<button (click)="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
 </div>
 <div class ="pokeapi">
+<img src="{{urLImg}}" alt="foto pokemon">
 <p>id: {{urLid}}</p>
 <p>type: {{urLType}} {{urLType2}} </p>
 <p>Hp: {{urLHp}}</p>

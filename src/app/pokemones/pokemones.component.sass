@@ -1,27 +1,42 @@
 /*pokemon Grid */
 .pokemon-grid
-  padding: 150px
-  gap: 30px
+  padding: 40px
   display: flex
+  // flex-direction: column
+  background-color: #060B28
+  align-items: center
   flex-wrap: wrap
+  justify-content: space-evenly
 
 .pokemon-grid .box
-  box-shadow: -30px 30px 20px
   text-align: center
   color:#ffff
   background-color: #060B28
-  padding: 20px
+  padding: 10px
   width: 150px
   height: 250px
-  margin:15px
   font-size: 16px
+  border: 4px solid #1CD80E
+  margin-bottom: 3rem
+
 
 .pokemon-grid.box img
   max-height: 100%
   display:block
-  margin: 0 auto
   object-fit: cover
   max-width:200px
   max-height: 200px
 
+.POKEDEX
+  color:#1CD80E
+  text-size: 120px
+  display: flex
+  justify-content: center
+  background-color: #060B28
+  padding: 5px
+
+
+@media screen and (max-width:428px)
+  .pokemon-grid
+    flex-direction: column
 
